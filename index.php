@@ -11,7 +11,14 @@
 </head>
 
 <body>
-
+    <div id="app">
+        <ul>
+            <li v-for="task in todoList">
+                {{ task.language }}
+            </li>
+        </ul>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
