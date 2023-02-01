@@ -12,11 +12,14 @@
 
 <body>
     <div id="app">
+        <h1>Lista Linguaggi</h1>
         <ul>
             <li v-for="task in todoList">
                 {{ task.language }}
             </li>
         </ul>
+        <input type="text" v-model="language" placeholder="inserisci nuovo linguaggio">
+        <button @click="addTodo">AGGIUNGI</button>
     </div>
     <script src="./js/script.js"></script>
 </body>
